@@ -19,12 +19,12 @@ Builder.register("editor.settings", {
   models: ["page"],
   designTokens: {
     colors: [
-      { name: "Primary", value: "var(--color-primary, #8B7E71)" },
+      { name: "Primary", value: "var(--color-primary, #90A497)" },
       { name: "Secondary", value: "var(--color-secondary, #BDAE9D)" },
-      { name: "Deconstructive", value: "var(--color-deconstructive, #6F8A78)" },
-      { name: "Muted", value: "var(--color-muted, #DED2C1)" },
+      { name: "Deconstructive", value: "var(--color-deconstructive, #5E7A68)" },
+      { name: "Muted", value: "var(--color-muted, #A89F91)" },
       { name: "Accent", value: "var(--color-accent, #E9DFD3)" },
-      { name: "Energetic", value: "var(--color-energetic, #A97FF2)" },
+      { name: "Energetic", value: "var(--color-energetic, #8B7E71)" },
       { name: "Background", value: "var(--color-background, #ffffff)" },
       { name: "Text", value: "var(--color-primary, #000000)" },
       { name: "Text Muted", value: "var(--color-muted, #e2e8f0)" },
