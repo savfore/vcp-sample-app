@@ -23,7 +23,7 @@ Builder.register("editor.settings", {
       { name: "Secondary", value: "var(--color-secondary, #BDAE9D)" },
       { name: "Deconstructive", value: "var(--color-deconstructive, #5E7A68)" },
       { name: "Muted", value: "var(--color-muted, #A89F91)" },
-      { name: "Accent", value: "var(--color-accent, #E9DFD3)" },
+      { name: "Accent", value: "var(--color-accent, #63584d)" },
       { name: "Energetic", value: "var(--color-energetic, #8B7E71)" },
       { name: "Background", value: "var(--color-background, #ffffff)" },
       { name: "Text", value: "var(--color-primary, #000000)" },
