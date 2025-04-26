@@ -166,7 +166,7 @@ Builder.register("editor.settings", {
       { name: "Small", value: "var(--space-small, 10px)" },
       { name: "Tiny", value: "5px" },
     ],
-    fontFamily: [{ name: "Primary", value: "var(--primary-font, Poppins)" }],
+    fontFamily: [{ name: "Primary", value: "var(--primary-font, Figtree)" }],
     fontSize: [
       { name: "Small", value: "var(--font-size-small, 12px)" },
       { name: "Medium", value: "var(--font-size-medium, 14px)" },
