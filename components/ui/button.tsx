@@ -23,10 +23,10 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         // Custom SaaS4U Variants
-        sage: "bg-[#90A497] text-white hover:bg-[#7a6e62]",              // muted green
-        lightTan: "bg-[#A89F91] text-black hover:bg-[#cfc2b0]",           // light creamy tan
-        mushroom: "bg-[#8B7E71] text-white hover:bg-[#aa9a88]",           // earthy mushroom brown
-        creamyTan: "bg-[#C1B7A0] text-black hover:bg-[#d6c8b8]",          // soft off-white tan     
+        sage: "bg-[#90A497] text-[#e3d9ca] hover:bg-[#90A497]",              // muted green
+        lightTan: "bg-[#e3d9ca] text-[#63584d] hover:bg-[#90A497]",           // light creamy tan
+        mushroom: "bg-[#63584d] text-[#e3d9ca] hover:bg-[#90A497]",           // earthy mushroom brown
+        creamyTan: "bg-[#C1B7A0] text-[#e3d9ca] hover:bg-[#90A497]",          // soft off-white tan     
       },
       size: {
         default: "px-5 py-2.5",
