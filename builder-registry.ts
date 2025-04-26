@@ -363,7 +363,7 @@ Builder.registerComponent(withChildren(Button), {
       name: "variant",
       type: "string",
       defaultValue: "default",
-      enum: ["default", "secondary", "tertiary", "outline", "link", "sage", "lightTan", "mushroom"],
+      enum: ["default", "secondary", "tertiary", "outline", "link", "sage", "lightTan", "mushroom", "creamyTan"],
     },
   ],
 });
