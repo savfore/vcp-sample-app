@@ -25,7 +25,7 @@ const buttonVariants = cva(
         // Custom SaaS4U Variants
         sage: "bg-[#8B7E71] text-white hover:bg-[#7a6e62]",              // darker muted green
         lightTan: "bg-[#DED2C1] text-black hover:bg-[#cfc2b0]",           // light creamy tan
-        mushroom: "bg-[#BDAE9D] text-black hover:bg-[#aa9a88]",           // earthy mushroom brown
+        mushroom: "bg-[#BDAE9D] text-white hover:bg-[#aa9a88]",           // earthy mushroom brown
         creamyTan: "bg-[#E9DFD3] text-black hover:bg-[#d6c8b8]",          // soft off-white tan     
       },
       size: {
