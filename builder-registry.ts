@@ -19,11 +19,11 @@ Builder.register("editor.settings", {
   models: ["page"],
   designTokens: {
     colors: [
-      { name: "Primary", value: "var(--color-primary, #000000)" },
-      { name: "Secondary", value: "var(--color-secondary, #ffffff)" },
-      { name: "Deconstructive", value: "var(--color-deconstructive, #18B4F4)" },
-      { name: "Muted", value: "var(--color-muted, #C8E2EE)" },
-      { name: "Accent", value: "var(--color-accent, #F35959)" },
+      { name: "Primary", value: "var(--color-primary, #8B7E71)" },
+      { name: "Secondary", value: "var(--color-secondary, #BDAE9D)" },
+      { name: "Deconstructive", value: "var(--color-deconstructive, #6F8A78)" },
+      { name: "Muted", value: "var(--color-muted, #DED2C1)" },
+      { name: "Accent", value: "var(--color-accent, #E9DFD3)" },
       { name: "Energetic", value: "var(--color-energetic, #A97FF2)" },
       { name: "Background", value: "var(--color-background, #ffffff)" },
       { name: "Text", value: "var(--color-primary, #000000)" },
@@ -363,7 +363,7 @@ Builder.registerComponent(withChildren(Button), {
       name: "variant",
       type: "string",
       defaultValue: "default",
-      enum: ["default", "secondary", "tertiary", "outline", "link"],
+      enum: ["default", "secondary", "tertiary", "outline", "link", "sage", "lightTan", "mushroom", "creamyTan"],
     },
   ],
 });
