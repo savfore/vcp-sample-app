@@ -1,4 +1,12 @@
 "use client"
+declare global {
+  interface Window {
+    builderState?: {
+      locale?: string;
+      // you can add more properties later if needed
+    };
+  }
+}
 import { ComponentProps } from "react";
 import { BuilderComponent, Builder, builder, useIsPreviewing } from "@builder.io/react";
 import DefaultErrorPage from "next/error";
