@@ -11,6 +11,7 @@ import ImageHero from "./components/Hero/ImageHero";
 import SplitHero from "./components/Hero/SplitHero";
 import TextHero from "./components/Hero/TextHero";
 import LocalePicker from "./components/LocalePicker";
+import { LocalizedSection } from "./components/LocalizedSection";
 
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY!);
 
@@ -381,4 +382,20 @@ Builder.registerComponent(LocalePicker, {
   name: "LocalePicker",
   image: "https://cdn.builder.io/api/v1/image/assets%2Fa87584e551b6472fa0f0a2eb10f2c0ff%2F5803f6cb27764a339296458c0056dc33",
   inputs: [],
+});
+
+Builder.registerComponent(LocalizedSection, {
+  name: "LocalizedSection",
+  canHaveChildren: true,
+  inputs: [
+    {
+      name: "locale",
+      type: "string",
+      enum: [
+        { label: "English (US)", value: "en-US" },
+        { label: "French (CA)", value: "fr-CA" },
+        { label: "Spanish (ES)", value: "es-ES" }
+      ]
+    }
+  ]
 });
