@@ -10,7 +10,6 @@ import IconCard from "./components/Card/IconCard";
 import ImageHero from "./components/Hero/ImageHero";
 import SplitHero from "./components/Hero/SplitHero";
 import TextHero from "./components/Hero/TextHero";
-import LocalePicker from "./components/LocalePicker";
 import { LocalizedSection } from "./components/LocalizedSection";
 import LanguageSelect from "./components/LanguageSelect";
 
