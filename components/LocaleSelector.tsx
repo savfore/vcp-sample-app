@@ -18,7 +18,16 @@ export default function LocaleSelector() {
       <div className="relative mb-4">
         <select
           value={selectedLocale}
-          onChange={e => setSelectedLocale(e.target.value)}
+          onChange={e => {
+            const newLocale = e.target.value;
+            setSelectedLocale(newLocale);  // ✅ update local React state
+            if (typeof window !== 'undefined') {  // ✅ double check we are in browser
+              if (!window.builderState) {
+                window.builderState = {};
+              }
+              window.builderState.locale = newLocale;  // ✅ update global builderState
+            }
+          }}
           className="block w-full px-4 py-2 pr-8 text-base text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
         >
           {locales.map(({ code, label }) => (
