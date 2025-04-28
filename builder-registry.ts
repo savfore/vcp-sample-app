@@ -10,8 +10,6 @@ import IconCard from "./components/Card/IconCard";
 import ImageHero from "./components/Hero/ImageHero";
 import SplitHero from "./components/Hero/SplitHero";
 import TextHero from "./components/Hero/TextHero";
-import { LocalizedSection } from "./components/LocalizedSection";
-import LocaleSelector from "./components/LocaleSelector";
 
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY!);
 
@@ -378,18 +376,6 @@ Builder.registerComponent(Header, {
   name: "Header",
 });
 
-Builder.registerComponent(LocaleSelector, {
-  name: "LocaleSelector",
-  image: "https://cdn.builder.io/api/v1/image/assets%2Fa87584e551b6472fa0f0a2eb10f2c0ff%2F5803f6cb27764a339296458c0056dc33",
-  inputs: [],
-  canHaveChildren: false,
-  description: "A dropdown locale selector with sample content for each locale.",
-  defaultStyles: {
-    display: "block",
-    width: "100%",
-    maxWidth: "16rem"
-  }
-});
 
 Builder.register("insertMenu", {
   name: "Navigation",
@@ -397,21 +383,5 @@ Builder.register("insertMenu", {
     { name: "LocaleSelector", priority: 1 },
     { name: "Header" },
     { name: "Footer" }
-  ]
-});
-
-Builder.registerComponent(LocalizedSection, {
-  name: "LocalizedSection",
-  canHaveChildren: true,
-  inputs: [
-    {
-      name: "locale",
-      type: "string",
-      enum: [
-        { label: "English (US)", value: "en-US" },
-        { label: "French (CA)", value: "fr-CA" },
-        { label: "Spanish (ES)", value: "es-ES" }
-      ]
-    }
   ]
 });
