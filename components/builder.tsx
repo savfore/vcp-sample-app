@@ -13,7 +13,13 @@ import DefaultErrorPage from "next/error";
 import "../builder-registry";
 import { AnimatedSection } from "./AnimatedSection";
 import { useRouter } from 'next/navigation';
+"use client";
+import LocaleSelector from './LocaleSelector'; // Adjust your path if necessary
 
+Builder.registerComponent(LocaleSelector, {
+  name: 'Locale Selector',
+  inputs: [],
+});
 type BuilderPageProps = ComponentProps<typeof BuilderComponent>;
 
 export function RenderBuilderContent(props: BuilderPageProps) {
