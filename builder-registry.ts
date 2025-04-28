@@ -385,11 +385,16 @@ Builder.registerComponent(LocalePicker, {
     {
       name: "className",
       type: "string",
-      defaultValue: "relative inline-block"
+      defaultValue: "relative w-48"
     }
   ],
   canHaveChildren: false,
-  description: "A dropdown language selector component that allows users to switch between different locales"
+  description: "A language selector dropdown component",
+  defaultStyles: {
+    display: "block",
+    width: "100%",
+    maxWidth: "12rem"
+  }
 });
 
 Builder.register("insertMenu", {
