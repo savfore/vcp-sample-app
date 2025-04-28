@@ -21,16 +21,19 @@ export default function LocalePicker() {
     if (typeof window !== "undefined") {
       window.builderState = window.builderState || {};
       window.builderState.locale = code;
+      // Force a re-render of localized content
+      window.dispatchEvent(new Event('localeChange'));
     }
   };
 
   return (
-    <div className="flex gap-2">
+    <div className="flex gap-2 p-4 bg-white rounded-lg shadow-sm">
       {languages.map(({ code, label }) => (
         <Button
           key={code}
           variant="outline"
           onClick={() => handleLanguageChange(code)}
+          className="px-4 py-2"
         >
           {label}
         </Button>
