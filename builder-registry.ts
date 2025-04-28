@@ -381,7 +381,16 @@ Builder.registerComponent(Header, {
 Builder.registerComponent(LocalePicker, {
   name: "LocalePicker",
   image: "https://cdn.builder.io/api/v1/image/assets%2Fa87584e551b6472fa0f0a2eb10f2c0ff%2F5803f6cb27764a339296458c0056dc33",
-  inputs: [],
+  inputs: []
+});
+
+Builder.register("insertMenu", {
+  name: "Navigation",
+  items: [
+    { name: "LocalePicker" },
+    { name: "Header" },
+    { name: "Footer" }
+  ]
 });
 
 Builder.registerComponent(LocalizedSection, {
