@@ -385,17 +385,11 @@ Builder.registerComponent(LocalePicker, {
     {
       name: "className",
       type: "string",
-      defaultValue: "flex gap-2"
+      defaultValue: "relative inline-block"
     }
   ],
-  defaultChildren: [
-    {
-      "@type": "@builder.io/sdk:Element",
-      component: { name: "Text", options: { text: "Language Picker" } }
-    }
-  ],
-  canHaveChildren: true,
-  description: "A language selector component that allows users to switch between different locales"
+  canHaveChildren: false,
+  description: "A dropdown language selector component that allows users to switch between different locales"
 });
 
 Builder.register("insertMenu", {
