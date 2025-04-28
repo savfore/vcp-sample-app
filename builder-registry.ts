@@ -12,6 +12,7 @@ import SplitHero from "./components/Hero/SplitHero";
 import TextHero from "./components/Hero/TextHero";
 import LocalePicker from "./components/LocalePicker";
 import { LocalizedSection } from "./components/LocalizedSection";
+import LanguageSelect from "./components/LanguageSelect";
 
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY!);
 
@@ -378,16 +379,10 @@ Builder.registerComponent(Header, {
   name: "Header",
 });
 
-Builder.registerComponent(LocalePicker, {
-  name: "LanguageDropdown",
+Builder.registerComponent(LanguageSelect, {
+  name: "LanguageSelect",
   image: "https://cdn.builder.io/api/v1/image/assets%2Fa87584e551b6472fa0f0a2eb10f2c0ff%2F5803f6cb27764a339296458c0056dc33",
-  inputs: [
-    {
-      name: "className",
-      type: "string",
-      defaultValue: "relative w-48"
-    }
-  ],
+  inputs: [],
   canHaveChildren: false,
   description: "A language selector dropdown component",
   defaultStyles: {
@@ -400,7 +395,7 @@ Builder.registerComponent(LocalePicker, {
 Builder.register("insertMenu", {
   name: "Navigation",
   items: [
-    { name: "LanguageDropdown", priority: 1 },
+    { name: "LanguageSelect", priority: 1 },
     { name: "Header" },
     { name: "Footer" }
   ]
