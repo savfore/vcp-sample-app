@@ -4,8 +4,7 @@ import { BuilderComponent, Builder, builder, useIsPreviewing } from "@builder.io
 import DefaultErrorPage from "next/error";
 import "../builder-registry";
 import { AnimatedSection } from "./AnimatedSection";
-
-builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY!);
+import { useRouter } from 'next/navigation';
 
 type BuilderPageProps = ComponentProps<typeof BuilderComponent>;
 

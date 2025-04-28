@@ -381,7 +381,20 @@ Builder.registerComponent(Header, {
 Builder.registerComponent(LocalePicker, {
   name: "LocalePicker",
   image: "https://cdn.builder.io/api/v1/image/assets%2Fa87584e551b6472fa0f0a2eb10f2c0ff%2F5803f6cb27764a339296458c0056dc33",
-  inputs: []
+  inputs: [
+    {
+      name: "className",
+      type: "string",
+      defaultValue: "flex gap-2"
+    }
+  ],
+  defaultChildren: [
+    {
+      "@type": "@builder.io/sdk:Element",
+      component: { name: "Text", options: { text: "Language Picker" } }
+    }
+  ],
+  canHaveChildren: true
 });
 
 Builder.register("insertMenu", {
