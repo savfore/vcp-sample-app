@@ -394,13 +394,14 @@ Builder.registerComponent(LocalePicker, {
       component: { name: "Text", options: { text: "Language Picker" } }
     }
   ],
-  canHaveChildren: true
+  canHaveChildren: true,
+  description: "A language selector component that allows users to switch between different locales"
 });
 
 Builder.register("insertMenu", {
   name: "Navigation",
   items: [
-    { name: "LocalePicker" },
+    { name: "LocalePicker", priority: 1 },
     { name: "Header" },
     { name: "Footer" }
   ]
