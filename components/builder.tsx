@@ -11,15 +11,8 @@ import { ComponentProps } from "react";
 import { BuilderComponent, Builder, builder, useIsPreviewing } from "@builder.io/react";
 import DefaultErrorPage from "next/error";
 import "../builder-registry";
-import { AnimatedSection } from "./AnimatedSection";
 import { useRouter } from 'next/navigation';
-"use client";
-import LocaleSelector from './LocaleSelector'; // Adjust your path if necessary
 
-Builder.registerComponent(LocaleSelector, {
-  name: 'Locale Selector',
-  inputs: [],
-});
 type BuilderPageProps = ComponentProps<typeof BuilderComponent>;
 
 export function RenderBuilderContent(props: BuilderPageProps) {
@@ -43,13 +36,7 @@ export function RenderBuilderContent(props: BuilderPageProps) {
     }
   } : props.content;
 
-  if (content || isPreviewing) {
-    return (
-      <AnimatedSection isVisible={true}>
-        <BuilderComponent {...props} content={content} />
-      </AnimatedSection>
-    );
-  }
+ 
   
   return <DefaultErrorPage statusCode={404} />;
 }
